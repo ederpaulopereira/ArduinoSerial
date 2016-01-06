@@ -347,11 +347,6 @@ public class Principal extends javax.swing.JFrame {
     }
 
     public String getSerial() {
-
-        return ((this.porta).equalsIgnoreCase("null")?"":this.porta);
-        //return this.porta;
+        return this.porta;
     }
-
-    
-
 }
