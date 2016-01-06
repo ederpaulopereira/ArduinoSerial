@@ -21,7 +21,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class Principal extends javax.swing.JFrame {
 
-    private String porta;
+    private String porta = "";
     private static boolean instanciada = false;
 
     public String getPorta() {
@@ -348,7 +348,8 @@ public class Principal extends javax.swing.JFrame {
 
     public String getSerial() {
 
-        return this.porta;
+        return ((this.porta).equalsIgnoreCase("null")?"":this.porta);
+        //return this.porta;
     }
 
     
