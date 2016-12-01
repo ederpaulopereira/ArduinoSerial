@@ -27,25 +27,19 @@ public class MainSerial {
     }
     
     public String[] ListarPortas(){
-        int i = 0;
-        
+        int i = 0;        
         portas = new String[10];
-        
         while (listaDePortas.hasMoreElements()){
             CommPortIdentifier ips = (CommPortIdentifier)listaDePortas.nextElement();
             portas[i] = ips.getName();
-            
             i++;
         }
         return portas;
-        
-        
     }
     
     public boolean PortaExiste(String COMp){
             String temp;
             boolean e = false;
-            
             while (listaDePortas.hasMoreElements()){
                 CommPortIdentifier ips = (CommPortIdentifier)listaDePortas.nextElement();
                 temp = ips.getName();
@@ -53,9 +47,7 @@ public class MainSerial {
                     e = true;
                 }
             }
-            
             return e;
         }
-    
     
 }

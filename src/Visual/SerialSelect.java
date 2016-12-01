@@ -195,15 +195,12 @@ public class SerialSelect extends javax.swing.JFrame {
     public String getSerialSelecionada() {
         String serial = new String();
         serial = jComboBox1.getSelectedItem().toString();
-
         return serial;
     }
 
     private void voltar() {
-        
         Principal f = (Principal)parent;
         f.setSerial(getSerialSelecionada());
         this.dispose();
-                
     }
 }
